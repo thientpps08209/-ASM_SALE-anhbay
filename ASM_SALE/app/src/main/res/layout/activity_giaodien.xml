@@ -8,7 +8,7 @@
     android:padding="10dp"
 
     android:background="@drawable/bk2"
-    tools:context=".GiaodienActivity">
+    tools:context=".Screen.GiaodienActivity">
 
 
     <TextView

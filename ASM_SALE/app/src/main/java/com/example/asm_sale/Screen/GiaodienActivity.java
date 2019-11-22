@@ -1,14 +1,16 @@
-package com.example.asm_sale;
+package com.example.asm_sale.Screen;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class ResetpassActivity extends AppCompatActivity {
+import com.example.asm_sale.R;
+
+public class GiaodienActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_resetpass);
+        setContentView(R.layout.activity_giaodien);
     }
 }
