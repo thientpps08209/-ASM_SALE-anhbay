@@ -1,4 +1,4 @@
 package com.example.asm_sale.Model;
 
-public class bitches {
+public class Duyphu {
 }
