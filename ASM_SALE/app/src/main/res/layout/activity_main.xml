@@ -8,7 +8,7 @@
     android:padding="10dp"
     android:background="@drawable/gradient"
 
-    tools:context=".LoginActivity">
+    tools:context=".Screen.LoginActivity">
 
 
         <ImageView
