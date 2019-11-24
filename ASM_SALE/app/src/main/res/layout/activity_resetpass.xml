@@ -6,8 +6,18 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="10dp"
+    android:background="@drawable/redyeoo"
     tools:context=".Screen.ResetpassActivity">
 
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="232dp"
+        android:layout_height="202dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="25dp"
+        app:srcCompat="@drawable/resetjpg" />
 
     <TextView
         android:id="@+id/tv_doimatkhau"
@@ -32,6 +42,7 @@
             android:id="@+id/et_oldpassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
             android:ems="10"
             android:hint="Old Password"
             android:inputType="textPassword" />
