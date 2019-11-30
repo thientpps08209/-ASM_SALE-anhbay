@@ -63,5 +63,16 @@ io.on('connection', function (socket) {
     });
 });
 
+socket.on('updateUser',function(_id,password,confirmpass,newpassword){
+    console.log(password+ " updateUser");
+    collection.update({_id:new mongodb.ObjectID(_id)},{$set:{name: name, email:email, password:password,confirmpass:confirmpass,newpassword:newpassword}}, function(err, result){
+        if(err){
+            console.log(err);
+            socket.emit('updateUser', false);
+        }else{
+                socket.emit('updateUser', true);
 
+            }
+        });
+    });
     //updade anh bay da update
