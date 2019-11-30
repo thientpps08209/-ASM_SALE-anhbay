@@ -59,20 +59,22 @@ io.on('connection', function (socket) {
                 socket.emit('register', true);
 
             }
+
+        
         });
     });
+
+    socket.on('updateUser',function(_id, password,confirmpass,newpassword){
+        console.log(password+ " updateUser");
+         collection.update({_id:new mongodb.ObjectID(_id)},{$set:{password:password,confirmpass:confirmpass,newpassword:newpassword}}, function(err, result){
+            if(err){
+                console.log(err);
+                socket.emit('updateUser', false);
+            }else{
+                    socket.emit('updateUser', true);
+
+                }
+            });
+        });
 });
 
-socket.on('updateUser',function(_id,password,confirmpass,newpassword){
-    console.log(password+ " updateUser");
-    collection.update({_id:new mongodb.ObjectID(_id)},{$set:{ password:password,confirmpass:confirmpass,newpassword:newpassword}}, function(err, result){
-        if(err){
-            console.log(err);
-            socket.emit('updateUser', false);
-        }else{
-                socket.emit('updateUser', true);
-
-            }
-        });
-    });
-    //updade anh bay da update

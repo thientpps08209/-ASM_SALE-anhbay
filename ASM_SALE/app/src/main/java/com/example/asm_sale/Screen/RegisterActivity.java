@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.asm_sale.R;
@@ -20,12 +21,13 @@ import java.net.URISyntaxException;
 public class RegisterActivity extends AppCompatActivity {
     private Button btn_create_account;
     private EditText ed_name, ed_mail, ed_pass,ed_cofirmpass;
+    private TextView tv_resetpassword;
 
     private Socket mSocket;
 
     {
         try {
-            mSocket = IO.socket("http://192.168.1.3:2000");
+            mSocket = IO.socket("http://10.82.147.232:2000");
 
         } catch (URISyntaxException e) {
             throw new RuntimeException(e);
@@ -66,6 +68,7 @@ public class RegisterActivity extends AppCompatActivity {
         ed_mail = findViewById(R.id.ed_Email_01);
         ed_pass = findViewById(R.id.ed_password_02);
         ed_cofirmpass =findViewById(R.id.ed_confim_password);
+        tv_resetpassword =findViewById(R.id.tv_doimatkhau);
 
         btn_create_account =findViewById(R.id.bt_create_account);
 
@@ -85,6 +88,14 @@ public class RegisterActivity extends AppCompatActivity {
 
 
 
+            }
+        });
+
+        tv_resetpassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+               Intent i2 = new Intent(RegisterActivity.this,ResetpassActivity.class);
+               startActivity(i2);
             }
         });
 
