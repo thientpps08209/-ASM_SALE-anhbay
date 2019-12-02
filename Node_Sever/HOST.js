@@ -63,7 +63,7 @@ io.on('connection', function (socket) {
         
         });
     });
-       // update user
+       // update usermr
     socket.on('updateUser',function(_id, password,confirmpass,newpassword){
         console.log(password+ " updateUser");
          collection.update({_id:new mongodb.ObjectID(_id)},{$set:{password:password,confirmpass:confirmpass,newpassword:newpassword}}, function(err, result){
