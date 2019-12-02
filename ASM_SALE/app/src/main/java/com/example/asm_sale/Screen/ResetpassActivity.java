@@ -71,16 +71,16 @@ public class ResetpassActivity extends AppCompatActivity {
                 String ednewpassword = ed_newpassword.getText().toString();
                 String edoldpassword = ed_oldpassword.getText().toString();
                 String edconfirmpass = ed_cobfirmpass.getText().toString();
-                User(_id, ednewpassword,ednewpassword,edoldpassword);
+                User(_id,password,newpassword,confirmpass);
                 startActivity(new Intent(ResetpassActivity.this,LoginActivity.class));
                 finish();
 
             }
         });
     }
-    private void User(final String _id, final String password, final String confirmpass, final String newpassord ){
+    private void User(final String _id, final String password, final String confirmpass, final String newpassword ){
 
-        msocKet.emit("updateUser", _id,password,confirmpass,newpassord);
+        msocKet.emit("updateUser", _id,password,confirmpass,newpassword);
     }
 
 }
