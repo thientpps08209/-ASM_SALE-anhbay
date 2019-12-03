@@ -24,7 +24,7 @@ public class ResetpassActivity extends AppCompatActivity {
     Socket msocKet;
     {
         try {
-            msocKet = IO.socket("http://10.82.147.232:2000");
+            msocKet = IO.socket("http://10.82.148.7:2000");
         } catch (URISyntaxException e) {
             throw new RuntimeException();
         }
