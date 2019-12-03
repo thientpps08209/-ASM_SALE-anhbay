@@ -27,7 +27,7 @@ public class RegisterActivity extends AppCompatActivity {
 
     {
         try {
-            mSocket = IO.socket("http://10.82.147.232:2000");
+            mSocket = IO.socket("http://10.82.147.243:2000");
 
         } catch (URISyntaxException e) {
             throw new RuntimeException(e);
