@@ -94,8 +94,8 @@ public class RegisterActivity extends AppCompatActivity {
         tv_resetpassword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               Intent i2 = new Intent(RegisterActivity.this,ResetpassActivity.class);
-               startActivity(i2);
+             //  Intent i2 = new Intent(RegisterActivity.this,ResetpassActivity.class);
+              // startActivity(i2);
             }
         });
 
