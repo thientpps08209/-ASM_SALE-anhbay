@@ -26,8 +26,22 @@
         android:gravity="center"
         android:textSize="20dp"
         android:layout_marginTop="50dp"
-        android:textColor="#FAC70D"
+        android:textColor="#0FFC19"
         android:layout_height="wrap_content"/>
+
+
+
+    <TextView
+        android:id="@+id/tv_id"
+        android:layout_width="match_parent"
+        android:text="Changer Password"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:layout_marginTop="50dp"
+        android:textColor="#0FFC19"
+        android:visibility="gone"
+        android:layout_height="wrap_content"/>
+
 
     <LinearLayout
         android:orientation="vertical"
@@ -39,37 +53,48 @@
 
 
         <EditText
-            android:id="@+id/et_oldpassword"
+            android:id="@+id/et_matkhau_cu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:ems="10"
             android:hint="Old Password"
+
+            android:background="@drawable/sharp"
             android:inputType="textPassword" />
 
         <EditText
-            android:id="@+id/et_newpassword"
+            android:id="@+id/et_matkhau_moi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/sharp"
             android:hint="New Password"
             android:inputType="textPassword" />
 
         <EditText
-            android:id="@+id/et_cofrimpassword"
+            android:id="@+id/et_matkhau_capnhat"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:background="@drawable/sharp"
+            android:layout_marginTop="20dp"
             android:hint="ConFirm Password"
             android:inputType="textPassword" />
+
+
+        <Button
+            android:id="@+id/bt_chpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+
+            android:background="@drawable/sharp2"
+            android:text="Changer Password" />
+
     </LinearLayout>
 
-    <Button
-        android:id="@+id/bt_resetpassword"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/sharp2"
-        android:text="Changer Password" />
 
 
 </LinearLayout >
