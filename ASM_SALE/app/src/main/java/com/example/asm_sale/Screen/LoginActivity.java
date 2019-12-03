@@ -30,7 +30,11 @@ public class LoginActivity extends AppCompatActivity {
 
     {
         try {
+<<<<<<< HEAD
             mSocket = IO.socket("http://10.82.147.243:2000");
+=======
+            mSocket = IO.socket("http://10.82.148.7:2000");
+>>>>>>> fbfb1fba604c319f1126ef52ce9f344538181243
 
         } catch (URISyntaxException e) {
             throw new RuntimeException(e);

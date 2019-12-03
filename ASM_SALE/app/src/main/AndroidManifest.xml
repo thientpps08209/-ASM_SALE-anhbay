@@ -12,7 +12,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".Screen.ProductsActivity"></activity>
-        <activity android:name=".Screen.ResetpassActivity" />
         <activity android:name=".Screen.GiaodienActivity" />
         <activity android:name=".Screen.RegisterActivity" />
         <activity android:name=".Screen.LoginActivity">
