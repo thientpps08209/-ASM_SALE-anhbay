@@ -11,7 +11,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Screen.ProductsActivity"></activity>
+        <activity android:name=".Screen.GRIVEWActivity"></activity>
+        <activity android:name=".Screen.Product06Activity" />
+        <activity android:name=".Screen.Product05Activity" />
+        <activity android:name=".Screen.Product04Activity" />
+        <activity android:name=".Screen.Product03Activity" />
+        <activity android:name=".Screen.Product02Activity" />
+        <activity android:name=".Screen.Product01sActivity" />
         <activity android:name=".Screen.GiaodienActivity" />
         <activity android:name=".Screen.RegisterActivity" />
         <activity android:name=".Screen.LoginActivity">

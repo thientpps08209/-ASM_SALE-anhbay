@@ -68,7 +68,7 @@ public class RegisterActivity extends AppCompatActivity {
         ed_mail = findViewById(R.id.ed_Email_01);
         ed_pass = findViewById(R.id.ed_password_02);
         ed_cofirmpass =findViewById(R.id.ed_confim_password);
-        tv_resetpassword =findViewById(R.id.tv_doimatkhau);
+
 
         btn_create_account =findViewById(R.id.bt_create_account);
 
