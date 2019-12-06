@@ -16,12 +16,12 @@ public class GiaodienActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_giaodien);
-        product1 =findViewById(R.id.iv_product01);
-        product2 =findViewById(R.id.iv_product02);
-        product3 =findViewById(R.id.iv_product03);
-        product4 =findViewById(R.id.iv_product04);
-        product5 =findViewById(R.id.iv_product05);
-        product6 =findViewById(R.id.iv_product06);
+        product1 =findViewById(R.id.iv_p1);
+        product2 =findViewById(R.id.iv_p2);
+        product3 =findViewById(R.id.iv_p3);
+        product4 =findViewById(R.id.iv_p4);
+        product5 =findViewById(R.id.iv_p5);
+        product6 =findViewById(R.id.iv_p6);
 
         product1.setOnClickListener(new View.OnClickListener() {
             @Override

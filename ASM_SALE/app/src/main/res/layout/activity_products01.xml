@@ -7,12 +7,5 @@
     android:layout_height="match_parent"
     tools:context=".Screen.Product01sActivity">
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fl_btsanpham"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="610dp"
-        android:layout_marginLeft="300dp"
-        android:clickable="true"
-        app:srcCompat="@drawable/ic_add" />
+
 </LinearLayout>

@@ -20,24 +20,27 @@
             android:padding="20dp"
             app:srcCompat="@drawable/post" />
 
-        <TextView
-            android:id="@+id/tv_tieude"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAlignment="center"
-            android:textSize="25dp"
 
-            android:textStyle="bold"
-            android:textColor="#FFE60B"
-            android:text="Phone Flash" />
 
 
         <LinearLayout
+            android:background="@drawable/sharp6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="10dp">
+            android:padding="15dp">
 
+
+                <TextView
+                    android:id="@+id/tv_tieude"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="25dp"
+
+                    android:textStyle="bold"
+                    android:textColor="#FFE60B"
+                    android:text="LOGIN" />
                 <EditText
                     android:id="@+id/ed_email"
                     android:layout_width="match_parent"
@@ -87,6 +90,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
+
 
             android:padding="10dp">
 
