@@ -35,9 +35,11 @@ io.on('connection', function (socket) {
             } else {
                 if (doc != null) {
                     if (doc.password == password) {
+                        console.log("Đăng nhập thành công");
                         console.log(doc.password);
                         socket.emit('login', true);
                     } else {
+                        console.log("Đăng nhập thành công");
                         socket.emit('login', false);
                     }
                 } else {
