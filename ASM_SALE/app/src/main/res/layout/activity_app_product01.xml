@@ -5,7 +5,103 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:padding="15dp"
+
     tools:context=".AppProduct01Activity">
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#04A3F0"
+        android:textSize="35dp"
+
+        android:layout_marginTop="25dp"
+        android:text="IPHONE "
+        />
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/iphone" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/ed_masanpham01"
+            android:layout_width="match_parent"
+            android:hint="Mã sản phẩm"
+            android:drawableLeft="@drawable/ic_list"
+            android:background="@drawable/sharp3"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/ed_tensanpham01"
+            android:layout_width="match_parent"
+            android:hint="Tên sản phẩm"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/ic_title2"
+            android:background="@drawable/sharp3"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/ed_nhasanxuat01"
+            android:layout_width="match_parent"
+            android:hint="Nhà sản xuất"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/ic_home2"
+            android:background="@drawable/sharp3"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/ed_giasanpham01"
+            android:layout_width="match_parent"
+            android:hint=" Giá sản phẩm"
+            android:drawableLeft="@drawable/ic_price"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/sharp3"
+            android:layout_height="wrap_content"/>
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/sharp6"
+
+            android:text="Thêm" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/sharp6"
+            android:text="Hủy" />
+
+    </LinearLayout>
+
+
 
 
 
