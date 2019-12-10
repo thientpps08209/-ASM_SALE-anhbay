@@ -1,8 +1,10 @@
-package com.example.asm_sale;
+package com.example.asm_sale.Screen;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.asm_sale.R;
 
 public class AppProduct01Activity extends AppCompatActivity {
 
