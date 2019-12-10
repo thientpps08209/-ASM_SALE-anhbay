@@ -11,7 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Screen.AppProduct01Activity"></activity>
+        <activity android:name=".Screen.AddProduct01Activity"></activity>
         <activity android:name=".Screen.GRIVEWActivity" />
         <activity android:name=".Screen.Product06Activity" />
         <activity android:name=".Screen.Product05Activity" />
